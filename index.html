@@ -5,8 +5,155 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="container">
+        <img src="img/header-logo.png" width="154" height="64" alt="Gllacy Shop">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        <nav class="main-menu">
+          <ul>
+            <li>Каталог</li>
+            <li>Доставка и оплата</li>
+            <li>О Компании</li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button class="header-btn header-btn-search">Поиск</button>
+          <button class="header-btn header-btn-user">Вход</button>
+          <button class="header-btn header-btn-basket">Пусто</button>
+        </div>
+        <div class="header-info"></div>
+          <p class="header-timetable">С 10 до 20, ежедневно</p>
+          <p class="header-phone">8 812 450-25-25</p>
+      </div>
+    </header>
+    <main class="container">
 
+      <section class="slider">
+        <article class="slider-first">
+          <p>Крем-брюле и пломбир с малиновым джемом</p>
+          <a class="slider-btn" href="#">Давайте оба!</a>
+          <ul class="slider-list">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="features">
+        <article class="fearures-left">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого,
+            добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
+        </article>
+        <article class="fearures-right">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+            вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="btn" href="#">Хочу шоколадки!</a>
+        </article>
+      </section>
+
+      <section class="catalog">
+        <article class="catalog-item">
+          <img src="img/catalog-item-orange.png">
+          <p class="catalog-item-price">310 &#8381;<span>/кг</span></p>
+          <p class="catalog-item-description">Сливочное с апельсиновым джемом
+            и цитрусовой стружкой</p>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-coffee.png">
+          <p class="catalog-item-price">310 &#8381;<span>/кг</span></p>
+          <p class="catalog-item-description">Сливочно-кофейное с кусочками
+            шоколада</p>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-strawberry.png">
+          <p class="catalog-item-price">310 &#8381;<span>/кг</span></p>
+          <p class="catalog-item-description">Сливочно-клубничное с присыпкой
+            из белого шоколада</p>
+        </article>
+        <article class="catalog-item">
+          <img src="img/catalog-item-caramel.png">
+          <p class="catalog-item-price">310 &#8381;<span>/кг</span></p>
+          <p class="catalog-item-description">Сливочное крем-брюле с карамельной
+            подливкой</p>
+        </article>
+      </section>
+
+      <section class="about-us">
+        <p class="about-us-def">Магазин Глейси — это онлайн и офлайн магазин по
+          продаже мороженого собственного производства на развес</p>
+        <div class="about-us-left">
+          <p>Все наше мороженое изготавливается на собственном производстве, с
+            использованием современного оборудования и проверенных временем
+            технологий.</p>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко
+            высочайшего качества. Все дополнительные ингредиенты и добавки
+            произведены из натурального, экологически чистого сырья. </p>
+        </div>
+        <div class="about-us-right">
+          <p>Закупка ингредиентов  производится только у проверенных фермерских
+            хозяйств и компаний, с которыми нас связывает долговременное
+            сотрудничество.</p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в
+            специальном термопаке, который не дает мороженому растаять в пути и
+            позволяет сохранить превосходный вкус.</p>
+        </div>
+      </section>
+
+      <div class="">
+        <article class="blog-news">
+          <h2>Новое в нашем блоге</h2>
+          <p>10  способов сервировки фруктовых щербетов к столу</p>
+        </article>
+        <article class="subscribe">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =) <p>
+          <form action="echo" method="post">
+            <label for="email">
+              <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+            </label>
+            <button class="btn" type="submit" id="submit">
+              Отправить
+            </button>
+          </form>
+        </article>
+      </div>
+
+
+    </main>
+    <section class="map">
+      <div class="map-container">
+        <img src="img/map.jpg" alt="Карта">
+      </div>
+      <div class="container">
+        <article class="map-contacts">
+          
+        </article>
+      </div>
+
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-in" href="#">Instagram</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+        </section>
+
+        <section class="footer-about-us">
+
+        </section>
+
+        <section class="footer-copyright">
+
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
