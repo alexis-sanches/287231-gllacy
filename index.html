@@ -5,12 +5,15 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <a><img src="img/header-logo.png" width="154" height="64" alt="Gllacy Shop"></a>
         <nav class="header-menu">
+          <a>
+            <img src="img/header-logo.png" width="154" height="64" alt="Gllacy Shop">
+          </a>
           <ul>
             <li>
               <a href="#">Каталог</a>
@@ -88,14 +91,14 @@
             <button class="btn" type="submit" name="checkout">Оформить заказ</button>
           </div>
         </div>
-
-        <div class="header-info"></div>
-          <span class="header-timetable">С 10 до 20, ежедневно</span>
-          <span class="header-phone">8 812 450-25-25</span>
       </div>
     </header>
 
     <main class="container">
+      <div class="main-info">
+        <span class="info-timetable">С 10 до 20, ежедневно</span>
+        <span class="info-phone">8 812 450-25-25</span>
+      </div>
       <section class="slider">
         <article class="slider-first">
           <b>Крем-брюле и пломбир с малиновым джемом</b>
@@ -109,7 +112,7 @@
 
         <article class="slider-third">
           <b>Пломбир с помадкой и клубничный щербет</b>
-          <a class="slider-btn" href="#">Давайте оба!</a>
+          <a class="btn slider-btn" href="#">Давайте оба!</a>
         </article>
 
         <div class="slider-list">
@@ -142,24 +145,28 @@
 
       <section class="catalog">
         <article class="catalog-item">
+          <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
           <img src="img/catalog-item-orange.jpg" width="267" height="267" alt="С апельсиновым джемом">
           <b class="catalog-item-price">310&#8381;<span>/кг</span></b>
           <p class="catalog-item-description">Сливочное с апельсиновым джемом
             и цитрусовой стружкой</p>
         </article>
         <article class="catalog-item">
+          <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
           <img src="img/catalog-item-coffee.jpg" width="267" height="267" alt="Кофейное">
           <b class="catalog-item-price">380&#8381;<span>/кг</span></b>
           <p class="catalog-item-description">Сливочно-кофейное с кусочками
             шоколада</p>
         </article>
         <article class="catalog-item">
+          <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
           <img src="img/catalog-item-strawberry.jpg" width="267" height="267" alt="Клубничное">
           <b class="catalog-item-price">355&#8381;<span>/кг</span></b>
           <p class="catalog-item-description">Сливочно-клубничное с присыпкой
             из белого шоколада</p>
         </article>
         <article class="catalog-item">
+          <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
           <img src="img/catalog-item-caramel.jpg" width="267" height="267" alt="Крем-брюле">
           <b class="catalog-item-price">415&#8381;<span>/кг</span></b>
           <p class="catalog-item-description">Сливочное крем-брюле с карамельной
@@ -218,17 +225,15 @@
       <div class="map-image">
         <img src="img/map.jpg" width="1200" height="430" alt="Карта">
       </div>
-      <div class="container">
-        <article class="map-contacts">
-          <span>Адрес главного офиса<br>
-            и офлайн магазина:</span>
-          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-          <span>Для заказов по телефону:</span>
-          <b>8 812 450-25-25</b>
-          <span>(с 10 до 20 ежедневно)</span>
-          <a class="btn" href="#">Форма обратной связи</a>
-        </article>
-      </div>
+      <article class="map-contacts">
+        <span>Адрес главного офиса<br>
+          и офлайн магазина:</span>
+        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        <span>Для заказов по телефону:</span>
+        <b>8 812 450-25-25</b>
+        <span>(с 10 до 20 ежедневно)</span>
+        <a class="btn" href="#">Форма обратной связи</a>
+      </article>
     </section>
 
     <footer class="page-footer">
