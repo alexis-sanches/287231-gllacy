@@ -8,7 +8,7 @@ body {
   line-height: 22px;
 
   background-color: #849d8f;
-/*  background-image: url('../img/gllacy-catalog-1200.jpg');
+/*  background-image: url('../img/slider-one.png');
   background-repeat: no-repeat;
   background-position: center top; */
   color: white;
@@ -35,8 +35,14 @@ h2 {
   margin-bottom: 0;
 }
 
+.header-menu {
+  float: left;
+  width: 853px;
+}
+
 .header-menu > a {
   float: left;
+  width: 154px;
 }
 
 .header-menu ul,
@@ -45,17 +51,16 @@ h2 {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.header-menu ul {
-  float: left;
+  vertical-align: middle;
+  font-size: 0;
 }
 
 .paginator {
   float: right;
-  height: 26px;
   margin-top: 42px;
   margin-bottom: 30px;
+  min-width: 190px;
+  height: 26px;
 }
 
 .header-menu li,
@@ -63,18 +68,30 @@ h2 {
 .bread-crumbs li {
   display: inline-block;
   white-space: nowrap;
+  font-size: 16px;
+}
+
+.bread-crumbs li {
+  font-size: 14px;
+
 }
 
 .header-buttons {
   float: right;
+  width: 267px;
+  font-size: 0px;
+  text-align: right;
+  vertical-align: middle;
 }
 
 .header-btn {
   display: inline-block;
+  font-size: 14px;
 }
 
 .btn {
   display: block;
+  text-align: center;
 }
 
 .header-submenu,
@@ -89,6 +106,7 @@ h2 {
 
 .main-info {
   float: right;
+  width: 180px;
 }
 .main-info span {
   display: block;
@@ -114,11 +132,22 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  padding-top: 320px;
+  width: 700px;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 
 .slider-list {
   float: left;
+  width: 80px;
+}
+
+.slider-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
 }
 
 .banners {
@@ -236,15 +265,18 @@ div[class^="about-us-"] {
 
 .footer-social {
   float: left;
+  width: 188px;
 }
 
 
 .footer-about-us {
   float: left;
+  width: 328px;
 }
 
 .footer-copyright {
   float: right;
+  width: 189px;
 }
 
 .settings {
