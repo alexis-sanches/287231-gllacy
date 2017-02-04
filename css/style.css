@@ -8,9 +8,9 @@ body {
   line-height: 22px;
 
   background-color: #849d8f;
-/*  background-image: url('../img/slider-one.png');
+  background-image: url('../img/gllacy-index-1200.jpg');
   background-repeat: no-repeat;
-  background-position: center top; */
+  background-position: center top;
   color: white;
 }
 
@@ -25,24 +25,52 @@ h2 {
   font-weight: bold;
   line-height: 41px;
 }
+
+.header-layout > nav,
+.header-layout > div {
+  background-color: green;
+  opacity: 0.5;
+
+}
+
 .container {
   width: 1146px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 27px;
+  margin: 0 auto;
+  outline: 1px solid black;
 }
+
 .page-header {
+
+}
+
+.header-layout {
+  display: flex;
+  justify-content: space-between;
   min-height: 73px;
-  margin-bottom: 0;
 }
 
 .header-menu {
-  float: left;
-  width: 853px;
+  flex-basis: 560px;
+  outline: 1px solid green;
 }
 
-.header-menu > a {
-  float: left;
-  width: 154px;
+.header-menu-main {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.header-menu-main li {
+  outline: 1px solid blue;
+  display: flex;
+}
+
+.header-menu-main li > a {
+
+  color: white;
+  text-decoration: none;
+  outline: 1px solid white;
+
 }
 
 .header-menu ul,
@@ -53,6 +81,7 @@ h2 {
   list-style: none;
   vertical-align: middle;
   font-size: 0;
+  outline: 1px solid blue;
 }
 
 .paginator {
@@ -63,25 +92,10 @@ h2 {
   height: 26px;
 }
 
-.header-menu li,
-.paginator li,
-.bread-crumbs li {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 16px;
-}
-
-.bread-crumbs li {
-  font-size: 14px;
-
-}
 
 .header-buttons {
-  float: right;
-  width: 267px;
-  font-size: 0px;
-  text-align: right;
-  vertical-align: middle;
+  flex-basis: 267px;
+  outline: 1px solid green;
 }
 
 .header-btn {
@@ -94,7 +108,7 @@ h2 {
   text-align: center;
 }
 
-.header-submenu,
+.header-menu-sub,
 .header-search,
 .header-login,
 .header-basket,

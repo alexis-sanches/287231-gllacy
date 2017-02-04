@@ -9,15 +9,18 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="header-layout container">
         <nav class="header-menu">
           <a>
             <img src="img/header-logo.png" width="154" height="64" alt="Gllacy Shop">
           </a>
-          <ul>
+          <ul class="header-menu-main">
             <li>
               <a href="#">Каталог</a>
-              <ul class="header-submenu">
+              <ul class="header-menu-sub">
+                <li>
+
+                </li>
                 <li>
                   <a href="#">Новинки</a>
                 </li>
@@ -47,25 +50,29 @@
         <div class="header-buttons">
           <button class="header-btn header-btn-search">Поиск</button>
           <div class="header-search">
-            <form class="header-search form" method="get" action="echo">
-              <label for="search">
-                <input type="search" id="search" name="search" placeholder="Что ищем?">
-              </label>
+            <form method="get" action="echo">
+              <div class="header-search-form">
+                <label>
+                  <input type="search" name="search" placeholder="Что ищем?">
+                </label>
+              </div>
             </form>
           </div>
 
           <a class="header-btn header-btn-user" href="#">Вход</a>
           <div class="header-login">
-            <form class="header-login-form" method="get" action="echo">
-              <label for="header-email">
-                <input type="email" id="header-email" name="header-email" placeholder="Электронная почта" required>
-              </label>
-              <label for="header-password">
-                <input type="password" id="header-password" name="header-password" placeholder="Пароль" required>
-              </label>
-              <button class="btn" type="submit" name="login">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+            <form method="get" action="echo">
+              <div class="header-login-form">
+                <label>
+                  <input type="email" name="header-email" placeholder="Электронная почта" required>
+                </label>
+                <label>
+                  <input type="password" name="header-password" placeholder="Пароль" required>
+                </label>
+                <button class="btn" type="submit" name="login">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
             </form>
           </div>
 
@@ -95,12 +102,12 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="main-info">
-          <span class="info-timetable">С 10 до 20, ежедневно</span>
-          <span class="info-phone">8 812 450-25-25</span>
-        </div>
-        <section class="slider">
+      <div class="main-info">
+        <span class="info-timetable">С 10 до 20, ежедневно</span>
+        <span class="info-phone">8 812 450-25-25</span>
+      </div>
+      <section class="slider">
+        <div class="container">
           <article class="slider-first">
             <b>Крем-брюле и пломбир с малиновым джемом</b>
             <a class="btn slider-btn" href="#">Давайте оба!</a>
@@ -117,19 +124,21 @@
           </article>
 
           <div class="slider-list">
-            <label for="slider-one">
-              <input id="slider-one" name="slider" value="slider-one" type="radio" checked>
+            <label>
+              <input name="slider" value="slider-one" type="radio" checked>
             </label>
-            <label for="slider-two">
-              <input id="slider-two" name="slider" value="slider-two" type="radio">
+            <label>
+              <input name="slider" value="slider-two" type="radio">
             </label>
-            <label for="slider-three">
-              <input id="slider-three" name="slider" value="slider-three" type="radio">
+            <label>
+              <input name="slider" value="slider-three" type="radio">
             </label>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="banners">
+      <section class="banners">
+        <div class="container">
           <article class="banners-left">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого,
@@ -142,9 +151,11 @@
               вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="btn" href="#">Хочу шоколадки!</a>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="catalog">
+      <section class="catalog">
+        <div class="container">
           <article class="catalog-item">
             <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
             <img src="img/catalog-item-orange.jpg" width="267" height="267" alt="С апельсиновым джемом">
@@ -173,9 +184,11 @@
             <p class="catalog-item-description">Сливочное крем-брюле с карамельной
               подливкой</p>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="about-us">
+      <section class="about-us">
+        <div class="container">
           <p class="about-us-def"><b>Магазин Глейси — это онлайн и офлайн магазин по
             продаже мороженого собственного производства на развес</b></p>
           <div class="about-us-left">
@@ -198,9 +211,11 @@
               специальном термопаке, который не дает мороженому растаять в пути и
               позволяет сохранить превосходный вкус.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <div class="misc">
+      <section class="misc">
+        <div class="container">
           <article class="blog-news">
             <h4>Новое в нашем блоге</h4>
             <h3>10  способов сервировки фруктовых щербетов к столу</h3>
@@ -210,17 +225,19 @@
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
               самого вкусного, что у нас происходит. Обещаем не спамить и не слать
               всякой ненужной ерунды. Честно =) <p>
-            <form class="subscribe-form" action="echo" method="post">
-              <label for="subscribe-email">
-                <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта" required>
-              </label>
-              <button class="btn" type="submit" id="subscribe-submit">
-                Отправить
-              </button>
+            <form action="echo" method="post">
+              <div class="subscribe-form">
+                <label>
+                  <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                </label>
+                <button class="btn" type="submit">
+                  Отправить
+                </button>
+              </div>
             </form>
           </article>
         </div>
-      </div>
+      </section>
     </main>
 
     <section class="map">
