@@ -19,9 +19,6 @@
               <a href="#">Каталог</a>
               <ul class="header-menu-sub">
                 <li>
-
-                </li>
-                <li>
                   <a href="#">Новинки</a>
                 </li>
                 <li>
@@ -48,7 +45,7 @@
         </nav>
 
         <div class="header-buttons">
-          <button class="header-btn header-btn-search">Поиск</button>
+          <button class="sprite header-btn header-btn-search"></button>
           <div class="header-search">
             <form method="get" action="echo">
               <div class="header-search-form">
@@ -102,12 +99,14 @@
     </header>
 
     <main>
-      <div class="main-info">
-        <span class="info-timetable">С 10 до 20, ежедневно</span>
-        <span class="info-phone">8 812 450-25-25</span>
+      <div class="container">
+        <div class="main-info">
+          <span class="info-timetable">С 10 до 20, ежедневно</span>
+          <span class="info-phone">8 812 450-25-25</span>
+        </div>
       </div>
       <section class="slider">
-        <div class="container">
+        <div class="slider-layout container">
           <article class="slider-first">
             <b>Крем-брюле и пломбир с малиновым джемом</b>
             <a class="btn slider-btn" href="#">Давайте оба!</a>
@@ -124,21 +123,18 @@
           </article>
 
           <div class="slider-list">
-            <label>
-              <input name="slider" value="slider-one" type="radio" checked>
-            </label>
-            <label>
-              <input name="slider" value="slider-two" type="radio">
-            </label>
-            <label>
-              <input name="slider" value="slider-three" type="radio">
-            </label>
+            <input id="slider-one" name="slider" value="slider-one" type="radio" checked>
+            <label for="slider-one"></label>
+            <input id="slider-two" name="slider" value="slider-two" type="radio">
+            <label for="slider-two"></label>
+            <input id="slider-three" name="slider" value="slider-three" type="radio">
+            <label for="slider-three"></label>
           </div>
         </div>
       </section>
 
       <section class="banners">
-        <div class="container">
+        <div class="section-layout container">
           <article class="banners-left">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого,
@@ -155,30 +151,30 @@
       </section>
 
       <section class="catalog">
-        <div class="container">
+        <div class="section-layout container">
           <article class="catalog-item">
-            <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
+            <img src="img/hit.png" width="61" height="61" alt="Хит">
             <img src="img/catalog-item-orange.jpg" width="267" height="267" alt="С апельсиновым джемом">
             <b class="catalog-item-price">310&#8381;<span>/кг</span></b>
             <p class="catalog-item-description">Сливочное с апельсиновым джемом
               и цитрусовой стружкой</p>
           </article>
           <article class="catalog-item">
-            <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
+            <img src="img/hit.png" width="61" height="61" alt="Хит">
             <img src="img/catalog-item-coffee.jpg" width="267" height="267" alt="Кофейное">
             <b class="catalog-item-price">380&#8381;<span>/кг</span></b>
             <p class="catalog-item-description">Сливочно-кофейное с кусочками
               шоколада</p>
           </article>
           <article class="catalog-item">
-            <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
+            <img src="img/hit.png" width="61" height="61" alt="Хит">
             <img src="img/catalog-item-strawberry.jpg" width="267" height="267" alt="Клубничное">
             <b class="catalog-item-price">355&#8381;<span>/кг</span></b>
             <p class="catalog-item-description">Сливочно-клубничное с присыпкой
               из белого шоколада</p>
           </article>
           <article class="catalog-item">
-            <!--<img src="img/hit.png" width="61" height="61" alt="Хит">-->
+            <img src="img/hit.png" width="61" height="61" alt="Хит">
             <img src="img/catalog-item-caramel.jpg" width="267" height="267" alt="Крем-брюле">
             <b class="catalog-item-price">415&#8381;<span>/кг</span></b>
             <p class="catalog-item-description">Сливочное крем-брюле с карамельной
@@ -189,52 +185,62 @@
 
       <section class="about-us">
         <div class="container">
-          <p class="about-us-def"><b>Магазин Глейси — это онлайн и офлайн магазин по
-            продаже мороженого собственного производства на развес</b></p>
-          <div class="about-us-left">
-            <img src="img/description-one.png" width="49" height="49" alt="Мороженое">
-            <p>Все наше мороженое изготавливается на собственном производстве, с
-              использованием современного оборудования и проверенных временем
-              технологий.</p>
-            <img src="img/description-two.png" width="49" height="49" alt="Листочек">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко
-              высочайшего качества. Все дополнительные ингредиенты и добавки
-              произведены из натурального, экологически чистого сырья. </p>
-          </div>
-          <div class="about-us-right">
-            <img src="img/description-three.png" width="49" height="49" alt="Корова">
-            <p>Закупка ингредиентов  производится только у проверенных фермерских
-              хозяйств и компаний, с которыми нас связывает долговременное
-              сотрудничество.</p>
-            <img src="img/description-four.png" width="49" height="49" alt="Термометр">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в
-              специальном термопаке, который не дает мороженому растаять в пути и
-              позволяет сохранить превосходный вкус.</p>
-          </div>
+          <div class="about-us-layout">
+              <p class="about-us-def"><b>Магазин Глейси — это онлайн и офлайн магазин по
+                продаже мороженого собственного производства на развес</b></p>
+              <ul class="about-us-list">
+                <li>
+                  <div class="about-us-image"></div>
+                  <p>Все наше мороженое изготавливается на собственном производстве, с
+                    использованием современного оборудования и проверенных временем
+                    технологий.</p>
+                </li>
+                <li>
+                  <div class="about-us-image"></div>
+                  <p>Закупка ингредиентов  производится только у проверенных фермерских
+                    хозяйств и компаний, с которыми нас связывает долговременное
+                    сотрудничество.</p>
+                </li>
+                <li>
+                  <div class="about-us-image"></div>
+                  <p>Для приготовления мороженого используются настоящие сливки и молоко
+                    высочайшего качества. Все дополнительные ингредиенты и добавки
+                    произведены из натурального, экологически чистого сырья. </p>
+                </li>
+                <li>
+                  <div class="about-us-image"></div>
+                  <p>Доставка нашего мороженого до заказчиков осуществляется в
+                    специальном термопаке, который не дает мороженому растаять в пути и
+                    позволяет сохранить превосходный вкус.</p>
+                </li>
+              </ul>
+            </div>
         </div>
       </section>
 
       <section class="misc">
-        <div class="container">
+        <div class="section-layout container">
           <article class="blog-news">
             <h4>Новое в нашем блоге</h4>
-            <h3>10  способов сервировки фруктовых щербетов к столу</h3>
+            <h3>10&nbsp; способов сервировки фруктовых щербетов к столу</h3>
           </article>
 
           <article class="subscribe">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-              всякой ненужной ерунды. Честно =) <p>
-            <form action="echo" method="post">
-              <div class="subscribe-form">
-                <label>
-                  <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
-                </label>
-                <button class="btn" type="submit">
-                  Отправить
-                </button>
-              </div>
-            </form>
+            <div class="subscribe-bg">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                всякой ненужной ерунды. Честно =) <p>
+              <form action="echo" method="post">
+                <div class="subscribe-form">
+                  <label>
+                    <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                  </label>
+                  <button class="btn" type="submit">
+                    Отправить
+                  </button>
+                </div>
+              </form>
+            </div>
           </article>
         </div>
       </section>
@@ -247,7 +253,8 @@
       <article class="map-contacts">
         <span>Адрес главного офиса<br>
           и офлайн магазина:</span>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        <b>ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург</b>
         <span>Для заказов по телефону:</span>
         <b>8 812 450-25-25</b>
         <span>(с 10 до 20 ежедневно)</span>
@@ -256,30 +263,28 @@
     </section>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="footer-layout container">
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-in" href="#">Instagram</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+          <a class="sprite social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="sprite social-btn social-btn-in" href="#">Instagram</a>
+          <a class="sprite social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="sprite social-btn social-btn-vk" href="#">ВКонтакте</a>
         </div>
 
-        <div class="footer-about-us">
-          <ul>
-            <li>
-              <a href="#">Для поставщиков</a>
-            </li>
-            <li>
-              <a href="#">О производстве</a>
-            </li>
-            <li>
-              <a href="#">Наши документы</a>
-            </li>
-            <li>
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer-about-us">
+          <li>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
 
         <div class="footer-copyright">
           <img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy">
