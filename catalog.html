@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-body">
     <header class="page-header">
-      <div class="container">
+      <div class="header-layout container">
         <nav class="header-menu">
-          <a href="index.html">
+          <a>
             <img src="img/header-logo.png" width="154" height="64" alt="Gllacy Shop">
           </a>
-          <ul>
+          <ul class="header-menu-main">
             <li>
               <a href="#">Каталог</a>
-              <ul class="header-submenu">
+              <ul class="header-menu-sub">
                 <li>
                   <a href="#">Новинки</a>
                 </li>
@@ -44,27 +44,31 @@
         </nav>
 
         <div class="header-buttons">
-          <button class="header-btn header-btn-search">Поиск</button>
+          <button class="sprite header-btn header-btn-search"></button>
           <div class="header-search">
-            <form class="header-search form" method="get" action="echo">
-              <label for="search">
-                <input type="search" id="search" name="search" placeholder="Что ищем?">
-              </label>
+            <form method="get" action="echo">
+              <div class="header-search-form">
+                <label>
+                  <input type="search" name="search" placeholder="Что ищем?">
+                </label>
+              </div>
             </form>
           </div>
 
           <a class="header-btn header-btn-user" href="#">Вход</a>
           <div class="header-login">
-            <form class="header-login-form" method="get" action="echo">
-              <label for="header-email">
-                <input type="email" id="header-email" name="header-email" placeholder="Электронная почта" required>
-              </label>
-              <label for="header-password">
-                <input type="password" id="header-password" name="header-password" placeholder="Пароль" required>
-              </label>
-              <button class="btn" type="submit" name="login">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+            <form method="get" action="echo">
+              <div class="header-login-form">
+                <label>
+                  <input type="email" name="header-email" placeholder="Электронная почта" required>
+                </label>
+                <label>
+                  <input type="password" name="header-password" placeholder="Пароль" required>
+                </label>
+                <button class="btn" type="submit" name="login">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
             </form>
           </div>
 
@@ -99,7 +103,7 @@
           <span class="info-timetable">С 10 до 20, ежедневно</span>
           <span class="info-phone">8 812 450-25-25</span>
         </div>
-        <ul class="bread-crumbs">
+        <ul class="breadcrumbs">
           <li>
             <a href="index.html">Главная</a>
           </li>
@@ -107,67 +111,74 @@
             <a href="#">Каталог</a>
           </li>
           <li>
-            <a href="catalog-cream.html">Сливочное</a>
+            <a>Сливочное</a>
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1>
-        <section class="settings">
-          <form class="settings-form" method="get" action="echo">
-            <div class="settings-sort">
-              <label>Сортировка:
-                <select>
-                  <option value="popular">по популярности</option>
-                  <option value="cheap">сначала дешёвые</option>
-                  <option value="expensive">сначала дорогие</option>
-                </select>
-              </label>
-            </div>
+        <h1 class="main-heading">Сливочное мороженое</h1>
+      </div>
+      <section class="settings">
+        <div class="container">
+          <form method="get" action="echo">
+            <div class="settings-form">
+              <div class="settings-sort">
+                <label>Сортировка:
+                  <select>
+                    <option value="popular">по популярности</option>
+                    <option value="cheap">сначала дешёвые</option>
+                    <option value="expensive">сначала дорогие</option>
+                  </select>
+                </label>
+              </div>
 
-            <div class="settings-price">
-              <label>Цена: 100 руб. - 500 руб.
-                <input name="settings-price" type="range" min="0" max="700" step="10">
-              </label>
-            </div>
+              <div class="settings-price">
+                <label>Цена: 100 руб. - 500 руб.
+                  <input name="settings-price" type="range" min="0" max="700" step="10">
+                </label>
+              </div>
 
-            <div class="settings-fatness">
-              <b>Жирность:</b>
-              <label>0%
-                <input type="radio" name="fatness" value="zero">
-              </label>
-              <label>до 10%
-                <input type="radio" name="fatness" value="ten">
-              </label>
-              <label>до 30%
-                <input type="radio" name="fatness" value="thirty">
-              </label>
-              <label>выше 30%
-                <input type="radio" name="fatness" value="more">
-              </label>
-            </div>
+              <div class="settings-fatness">
+                <b>Жирность:</b>
+                <label>0%
+                  <input type="radio" name="fatness" value="zero">
+                  <span class="settings-after"></span>
+                </label>
+                <label>до 10%
+                  <input type="radio" name="fatness" value="ten">
+                </label>
+                <label>до 30%
+                  <input type="radio" name="fatness" value="thirty">
+                </label>
+                <label>выше 30%
+                  <input type="radio" name="fatness" value="more">
+                </label>
+              </div>
 
-            <div>
-              <b>Наполнители:</b>
-              <label>шоколадные
-                <input type="checkbox" value="chocolate" checked>
-              </label>
-              <label>сахарные присыпки
-                <input type="checkbox" value="sugar" checked>
-              </label>
-              <label>фрукты
-                <input type="checkbox" value="fruit">
-              </label>
-              <label>сиропы
-                <input type="checkbox" value="syrup">
-              </label>
-              <label>джемы
-                <input type="checkbox" value="jam">
-              </label>
+              <div class="settings-checklist">
+                <b>Наполнители:</b>
+                <label>шоколадные
+                  <input type="checkbox" value="chocolate" checked>
+                </label>
+                <label>сахарные присыпки
+                  <input type="checkbox" value="sugar" checked>
+                </label>
+                <label>фрукты
+                  <input type="checkbox" value="fruit">
+                </label>
+                <label>сиропы
+                  <input type="checkbox" value="syrup">
+                </label>
+                <label>джемы
+                  <input type="checkbox" value="jam">
+                </label>
+              </div>
+              <button type="submit">Применить</button>
             </div>
-            <button type="submit">Применить</button>
           </form>
-        </section>
+        </div>
+      </section>
 
-        <section class="section-layout catalog">
+      <section class="catalog">
+        <div class="section-layout container">
           <article class="catalog-item">
             <img src="img/catalog-item-orange.jpg" width="267" height="267" alt="С апельсиновым джемом">
             <b class="catalog-item-price">310&#8381;<span>/кг</span></b>
@@ -232,62 +243,62 @@
             <b class="catalog-item-price">420&#8381;<span>/кг</span></b>
             <span class="catalog-item-description">Сливочное с мятным сиропом</span>
           </article>
-        </section>
+        </div>
+      </section>
+      <div class="container">
         <ul class="paginator">
           <li>
-            <a class="paginator-link paginator-disabled" href="#prev">Назад</a>
+            <a class="sprite"></a>
           </li>
           <li>
-            <a class="paginator-link paginator-active" href="#prev">1</a>
+            <a class="paginator-active">1</a>
           </li>
           <li>
-            <a class="paginator-link" href="#">2</a>
+            <a href="#">2</a>
           </li>
           <li>
-            <a class="paginator-link" href="#">3</a>
+            <a href="#">3</a>
           </li>
           <li>
-            <a class="paginator-link" href="#">4</a>
+            <a href="#">4</a>
           </li>
           <li>
-            <a class="paginator-link" href="#">5</a>
+            <a href="#">5</a>
           </li>
           <li>
-            <a class="paginator-link" href="#">Вперёд</a>
+            <a class="sprite" href="#"></a>
           </li>
         </ul>
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="footer-layout container">
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-in" href="#">Instagram</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+          <a class="sprite social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="sprite social-btn social-btn-in" href="#">Instagram</a>
+          <a class="sprite social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="sprite social-btn social-btn-vk" href="#">ВКонтакте</a>
         </div>
 
-        <div class="footer-about-us">
-          <ul>
-            <li>
-              <a href="#">Для поставщиков</a>
-            </li>
-            <li>
-              <a href="#">О производстве</a>
-            </li>
-            <li>
-              <a href="#">Наши документы</a>
-            </li>
-            <li>
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer-about-us">
+          <li>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
 
         <div class="footer-copyright">
           <img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy">
-          <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017</p>
+          <span>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017</span>
         </div>
       </div>
     </footer>
