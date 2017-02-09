@@ -70,7 +70,10 @@ body {
 .header-menu > a {
   align-self: flex-end;
   margin-right: auto;
+  margin-left: -2px;
   padding: 0;
+  width: 154px;
+  height: 64px;
 }
 
 .header-menu-main {
