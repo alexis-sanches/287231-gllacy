@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="catalog-body">
+  <body>
+    <div class="catalog-site-wrapper">
     <header class="page-header">
       <div class="header-layout container">
         <nav class="header-menu">
@@ -120,56 +121,78 @@
         <div class="container">
           <form method="get" action="echo">
             <div class="settings-form">
-              <div class="settings-sort">
-                <label>Сортировка:
-                  <select>
-                    <option value="popular">по популярности</option>
-                    <option value="cheap">сначала дешёвые</option>
-                    <option value="expensive">сначала дорогие</option>
-                  </select>
-                </label>
+              <div class="settings-fieldset">
+                <b>Сортировка:</b>
+                <select>
+                  <option value="popular">по популярности</option>
+                  <option value="cheap">сначала дешёвые</option>
+                  <option value="expensive">сначала дорогие</option>
+                </select>
               </div>
-
-              <div class="settings-price">
-                <label>Цена: 100 руб. - 500 руб.
-                  <input name="settings-price" type="range" min="0" max="700" step="10">
-                </label>
+              <div class="settings-fieldset">
+                <b>Цена: 100 руб. - 500 руб.</b>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               </div>
-
-              <div class="settings-fatness">
+              <div class="settings-fieldset">
                 <b>Жирность:</b>
-                <label>0%
-                  <input type="radio" name="fatness" value="zero">
-                  <span class="settings-after"></span>
-                </label>
-                <label>до 10%
-                  <input type="radio" name="fatness" value="ten">
-                </label>
-                <label>до 30%
-                  <input type="radio" name="fatness" value="thirty">
-                </label>
-                <label>выше 30%
-                  <input type="radio" name="fatness" value="more">
-                </label>
+                <div>
+                  <label>
+                    <input type="radio" name="fatness" value="zero" checked>
+                    <span class="sprite"></span>
+                    0%
+                  </label>
+                  <label>
+                    <input type="radio" name="fatness" value="ten">
+                    <span class="sprite"></span>
+                    до 10%
+                  </label>
+                  <label>
+                    <input type="radio" name="fatness" value="thirty">
+                    <span class="sprite"></span>
+                    до 30%
+                  </label>
+                  <label>
+                    <input type="radio" name="fatness" value="more">
+                    <span class="sprite"></span>
+                    выше 30%
+                  </label>
+                </div>
               </div>
-
-              <div class="settings-checklist">
+              <div class="settings-fieldset">
                 <b>Наполнители:</b>
-                <label>шоколадные
-                  <input type="checkbox" value="chocolate" checked>
-                </label>
-                <label>сахарные присыпки
-                  <input type="checkbox" value="sugar" checked>
-                </label>
-                <label>фрукты
-                  <input type="checkbox" value="fruit">
-                </label>
-                <label>сиропы
-                  <input type="checkbox" value="syrup">
-                </label>
-                <label>джемы
-                  <input type="checkbox" value="jam">
-                </label>
+                <div>
+                  <label>
+                    <input type="checkbox" value="chocolate" checked>
+                    <span class="sprite settings-first"></span>
+                    шоколадные
+                  </label>
+                  <label>
+                    <input type="checkbox" value="sugar" checked>
+                    <span class="sprite"></span>
+                    сахарные присыпки
+                  </label>
+                  <label>
+                    <input type="checkbox" value="fruit">
+                    <span class="sprite"></span>
+                    фрукты
+                  </label>
+                  <label>
+                    <input type="checkbox" value="syrup">
+                    <span class="sprite"></span>
+                    сиропы
+                  </label>
+                  <label>
+                    <input type="checkbox" value="jam">
+                    <span class="sprite"></span>
+                    джемы
+                  </label>
+                </div>
               </div>
               <button type="submit">Применить</button>
             </div>
@@ -180,6 +203,9 @@
       <section class="catalog">
         <div class="section-layout container">
           <article class="catalog-item">
+            <div class="catalog-card">
+              <a class="btn">Быстрый просмотр</a>
+            </div>
             <img src="img/catalog-item-orange.jpg" width="267" height="267" alt="С апельсиновым джемом">
             <b class="catalog-item-price">310&#8381;<span>/кг</span></b>
             <span class="catalog-item-description">Сливочное с апельсиновым джемом
@@ -302,6 +328,7 @@
         </div>
       </div>
     </footer>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
