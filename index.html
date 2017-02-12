@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
+    <div class="overlay"></div>
     <input id="slider-one" name="slider" value="slider-one" type="radio" checked>
     <input id="slider-two" name="slider" value="slider-two" type="radio">
     <input id="slider-three" name="slider" value="slider-three" type="radio">
@@ -27,7 +28,7 @@
                     <a href="#">Новинки</a>
                   </li>
                   <li>
-                    <a href="catalog-cream.html">Сливочное</a>
+                    <a href="catalog.html">Сливочное</a>
                   </li>
                   <li>
                     <a href="#">Щербеты</a>
@@ -283,7 +284,7 @@
           <span>Для заказов по телефону:</span>
           <b>8 812 450-25-25</b>
           <span>(с 10 до 20 ежедневно)</span>
-          <a class="btn" href="#">Форма обратной связи</a>
+          <a class="btn feedback-link" href="#">Форма обратной связи</a>
         </article>
       </section>
 
@@ -319,8 +320,9 @@
       </footer>
   <!-- Feedback form -->
       <section class="feedback">
+        <a class="sprite feedback-close" href="#"></a>
         <h2>Мы обязательно вам ответим!</h2>
-        <form class="feedback-form" method="post" action="echo">
+        <form method="post" action="echo">
           <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" required>
           <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
           <textarea id="feedback-text" name="feedback-text" rows="6" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
