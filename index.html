@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
     <div class="overlay"></div>
-    <input id="slider-one" name="slider" value="slider-one" type="radio" checked>
-    <input id="slider-two" name="slider" value="slider-two" type="radio">
-    <input id="slider-three" name="slider" value="slider-three" type="radio">
+    <input class="slider-one" id="slider-one" name="slider" value="slider-one" type="radio" checked>
+    <input class="slider-two" id="slider-two" name="slider" value="slider-two" type="radio">
+    <input class="slider-three" id="slider-three" name="slider" value="slider-three" type="radio">
 
     <div class="site-wrapper">
       <header class="page-header">
@@ -51,68 +51,77 @@
           </nav>
 
           <div class="header-buttons">
-            <button class="sprite header-btn header-btn-search"></button>
-            <div class="header-search">
-              <form method="get" action="echo">
-                <label>
-                  <input type="search" name="search" placeholder="Что ищем?">
-                </label>
-              </form>
+            <div class="header-button header-button-1">
+              <button class="sprite header-btn header-btn-search"></button>
+              <div class="header-search">
+                <form method="get" action="echo">
+                  <div class="input-label">
+                    <input id="header-search" type="search" name="search" placeholder="Что ищем?">
+                    <label class="hidden-label" for="header-search">Что ищем?</label>
+                  </div>
+                </form>
+              </div>
             </div>
 
-            <a class="header-btn header-btn-user" href="#">Вход</a>
-            <div class="header-login">
-              <form method="get" action="echo">
-                <div class="header-login-form">
-                  <label>
-                    <input type="email" name="header-email" placeholder="Электронная почта" required>
-                  </label>
-                  <label>
-                    <input type="password" name="header-password" placeholder="Пароль" required>
-                  </label>
-                  <div class="flex-container">
-                    <button class="btn" type="submit" name="login">Войти</button>
-                    <div class="header-login-links">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+            <div class="header-button header-button-2">
+              <a class="header-btn header-btn-user" href="#">Вход</a>
+              <div class="header-login">
+                <form method="get" action="echo">
+                  <div class="header-login-form">
+                    <div class="input-label">
+                      <input id="header-email" type="email" name="header-email" placeholder="Электронная почта" required>
+                      <label class="hidden-label" for="header-email">Электронная почта</label>
+                    </div>
+                    <div class="input-label">
+                      <input id="header-password" type="password" name="header-password" placeholder="Пароль" required>
+                      <label class="hidden-label" for="header-password">Пароль</label>
+                    </div>
+                    <div class="flex-container">
+                      <button class="btn" type="submit" name="login">Войти</button>
+                      <div class="header-login-links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
 
-            <a class="header-btn header-btn-basket" href="#">Пусто</a>
-            <div class="header-basket">
-              <table>
-                <tr>
-                  <td>
-                    <a href="#">
-                      <img src="img/x.png" width="11" height="11" alt="Удалить">
-                    </a>
-                  </td>
-                  <td>
-                    <img src="img/basket-1.png" width="33" height="33" alt="Апельсиновое">
-                  </td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х 200 руб.</td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="#">
-                      <img src="img/x.png" width="11" height="11" alt="Удалить">
-                    </a>
-                  </td>
-                  <td>
-                    <img src="img/basket-2.png" width="33" height="33" alt="Апельсиновое">
-                  </td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг х 300 руб.</td>
-                  <td>450 руб.</td>
-                </tr>
-              </table>
-              <b>Итого: 750 руб.</b>
-              <button class="btn" type="submit" name="checkout">Оформить заказ</button>
+            <div class="header-button header-button-3">
+              <a class="header-btn header-btn-basket" href="#">Пусто</a>
+              <div class="header-basket">
+                <table>
+                  <tr>
+                    <td>
+                      <a href="#">
+                        <img src="img/x.png" width="11" height="11" alt="Удалить">
+                      </a>
+                    </td>
+                    <td>
+                      <img src="img/basket-1.png" width="33" height="33" alt="Апельсиновое">
+                    </td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х 200 руб.</td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">
+                        <img src="img/x.png" width="11" height="11" alt="Удалить">
+                      </a>
+                    </td>
+                    <td>
+                      <img src="img/basket-2.png" width="33" height="33" alt="Апельсиновое">
+                    </td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х 300 руб.</td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <b>Итого: 750 руб.</b>
+                <button class="btn" type="submit" name="checkout">Оформить заказ</button>
+              </div>
             </div>
           </div>
         </div>
@@ -169,7 +178,7 @@
         </section>
 
         <section class="catalog">
-          <div class="section-layout container">
+          <div class="catalog-layout container">
             <article class="catalog-item catalog-item-hit">
               <div class="catalog-card">
                 <a class="btn">Быстрый просмотр</a>
@@ -224,7 +233,7 @@
                   </li>
                   <li>
                     <div class="about-us-image"></div>
-                    <p>Закупка ингредиентов  производится только у проверенных фермерских
+                    <p>Закупка ингредиентов &nbsp;производится только у проверенных фермерских
                       хозяйств и компаний, с которыми нас связывает долговременное
                       сотрудничество.</p>
                   </li>
@@ -259,9 +268,10 @@
                   всякой ненужной ерунды. Честно =) <p>
                 <form action="echo" method="post">
                   <div class="subscribe-form">
-                    <label>
-                      <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
-                    </label>
+                    <div class="input-label">
+                      <input id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                      <label for="subscribe-email" class="hidden-label">Электронная почта</label>
+                    </div>
                     <button class="btn" type="submit">
                       Отправить
                     </button>
@@ -323,14 +333,23 @@
         <a class="sprite feedback-close" href="#"></a>
         <h2>Мы обязательно вам ответим!</h2>
         <form method="post" action="echo">
-          <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" required>
-          <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
-          <textarea id="feedback-text" name="feedback-text" rows="6" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
-          <button class="btn" type="submit" id="feedback-submit">Отправить</button>
+          <div class="input-label">
+            <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" required>
+            <label class="hidden-label" for="feedback-name">Как вас зовут?</label>
+          </div>
+          <div class="input-label">
+            <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+            <label class="hidden-label" for="feedback-email">Ваша почта для ответа?</label>
+          </div>
+          <div class="input-label">
+            <textarea id="feedback-text" name="feedback-text" rows="6" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
+            <label class="hidden-label" for="feedback-text">Напишите что-нибудь...</label>
+          </div>
+          <button class="feedback-link btn" type="submit" id="feedback-submit">Отправить</button>
         </form>
       </section>
     </div>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=EOuRUbx6_uO0U7WZ4-I6nBBornBs2fIf&amp;width=100%25&amp;height=430&amp;id=yandex-map"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
