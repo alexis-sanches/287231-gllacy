@@ -1402,8 +1402,6 @@ body > input[type="radio"] {
   background-position: -526px -5px;
 }
 
-
-
 .settings-form input[type="radio"]:checked + span:hover {
   background-position: -495px -5px;
 }
